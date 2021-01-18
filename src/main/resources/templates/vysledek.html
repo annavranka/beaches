@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../static/css/styly.css"
+          th:href="${'css/styly.css'}"/>
+    <link rel="icon" href="../static/images/favicon.png"
+          th:href="${'images/favicon.png'}"/>
+    <title>Výchozí webová stránka | Java 2</title>
+</head>
+<body>
+    <div class="page">
+
+        <h1>Results</h1>
+
+        <h2>
+            You scored <span th:text="${score}">1</span> out of 8.
+        </h2>
+            <br>
+        <p>
+            Beach names for all curious fellows:
+        </p>
+        <ol>
+            <li>Faraga beach, Greece</li>
+            <li>Balos beach, Greece</li>
+            <li>Baia dei Turchi, Italy</li>
+            <li>Cala Goloritze, Italy</li>
+            <li>Red beach, Greece</li>
+            <li>Spiaggia di Sansone, Italy</li>
+            <li>Elafonisi beach, Greece</li>
+            <li>Spiaggia rosa, Italy</li>
+    </ol>
+
+        <a href="index.html" th:href="@{'/'}" class="button">Try again</a>
+    </div>
+</body>
+</html>
